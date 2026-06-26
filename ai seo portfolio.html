@@ -1,0 +1,2799 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Malik Hannan - AI SEO Specialist | Professional SEO Services & Consulting</title>
+    <meta name="description" content="Malik Hannan - Expert AI SEO Specialist offering comprehensive SEO services, technical audits, content optimization, and advanced AI-driven strategies. Transform your digital presence with cutting-edge SEO solutions.">
+    <meta name="keywords" content="AI SEO, SEO Specialist, Digital Marketing, Malik Hannan, SEO Consultant, Technical SEO, Content Optimization">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/76PsSk7K/cropped-circle-image-3.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/76PsSk7K/cropped-circle-image-3.png">
+    <link rel="shortcut icon" href="https://i.postimg.cc/76PsSk7K/cropped-circle-image-3.png">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="Malik Hannan">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="msapplication-navbutton-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Malik Hannan - AI SEO Specialist">
+    <meta property="og:description" content="Expert AI SEO services and digital marketing solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.postimg.cc/hv49VWrq/Whats-App-Image-2025-02-10-at-12-05-55-AM.jpg">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Primary Colors */
+            --primary-navy: #0f172a;
+            --primary-white: #ffffff;
+            --soft-gray: #f1f5f9;
+
+            /* Accent Colors */
+            --electric-blue: #3b82f6;
+            --premium-gold: #eab308;
+            --light-blue: #e0f2fe;
+
+            /* Supporting Colors */
+            --dark-gray: #374151;
+            --success-green: #10b981;
+            --slate-600: #475569;
+            --slate-300: #cbd5e1;
+            --gradient-primary: linear-gradient(135deg, var(--primary-navy) 0%, var(--electric-blue) 100%);
+            --gradient-gold: linear-gradient(135deg, var(--premium-gold) 0%, #f59e0b 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-white);
+            color: var(--primary-navy);
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 100vw;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--primary-white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--premium-gold);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--premium-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            color: var(--primary-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: var(--primary-white);
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: var(--light-blue);
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--gradient-gold);
+            color: var(--primary-navy);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(234, 179, 8, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(234, 179, 8, 0.4);
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 2;
+            justify-self: center;
+        }
+
+        .hero-image img {
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 5px solid var(--premium-gold);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-navy);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-gold);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--soft-gray);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-gray);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--electric-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--primary-white);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary-white);
+        }
+
+        .service-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-navy);
+        }
+
+        .service-description {
+            color: var(--dark-gray);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--dark-gray);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: bold;
+        }
+
+        /* Case Studies Dashboard */
+        .case-studies {
+            background: var(--soft-gray);
+        }
+
+        .dashboard-container {
+            background: var(--primary-white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin-top: 3rem;
+        }
+
+        .dashboard-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--soft-gray);
+        }
+
+        .dashboard-tab {
+            padding: 1rem 2rem;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .dashboard-tab.active {
+            color: var(--electric-blue);
+            border-bottom-color: var(--electric-blue);
+        }
+
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .case-study-card {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--electric-blue) 100%);
+            color: var(--primary-white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-study-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        .case-study-card:hover::before {
+            top: -30%;
+            right: -30%;
+        }
+
+        .case-study-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .case-study-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--premium-gold);
+        }
+
+        /* SEO Tools Showcase */
+        .tools-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tool-card {
+            background: var(--primary-white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--electric-blue);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--primary-white);
+            font-size: 1.5rem;
+        }
+
+        .tool-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-navy);
+        }
+
+        .tool-description {
+            color: var(--dark-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-expertise {
+            background: var(--light-blue);
+            color: var(--electric-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--soft-gray);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--primary-white);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+
+        .testimonial-content {
+            padding: 3rem;
+        }
+
+        .quote-icon {
+            color: var(--electric-blue);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.7;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-rating {
+            color: var(--premium-gold);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 3px solid var(--electric-blue);
+            flex-shrink: 0;
+        }
+
+        .author-info h4 {
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info span {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: var(--primary-white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--slate-300);
+            margin-bottom: 1rem;
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 2rem 0;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            color: var(--electric-blue);
+        }
+
+        .faq-answer {
+            padding-bottom: 2rem;
+            color: var(--dark-gray);
+            line-height: 1.8;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--primary-navy);
+            color: var(--primary-white);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--premium-gold);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--premium-gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: var(--electric-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--premium-gold);
+            transform: translateY(-3px);
+        }
+
+        .contact-form {
+            background: var(--primary-white);
+            padding: 3rem;
+            border-radius: 20px;
+            color: var(--primary-navy);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--slate-300);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--electric-blue);
+        }
+
+        .form-group textarea {
+            font-style: normal;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .form-group textarea::placeholder {
+            font-style: normal;
+            color: #9ca3af;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--gradient-primary);
+            color: var(--primary-white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-navy);
+            color: var(--primary-white);
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid var(--slate-600);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--primary-white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--premium-gold);
+        }
+
+        /* Large devices - prevent text/image overlap */
+        @media (min-width: 1200px) {
+            .hero-content {
+                max-width: 550px;
+                margin-left: 4rem;
+            }
+
+            .hero-image {
+                right: 8%;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .hero-content {
+                max-width: 450px;
+                margin-left: 2rem;
+            }
+
+            .hero-image {
+                right: 3%;
+            }
+
+            .hero-image img {
+                width: 320px;
+                height: 320px;
+            }
+        }
+
+        /* Responsive Design */
+        @media (min-width: 1200px) {
+            .hero .container {
+                gap: 6rem;
+            }
+
+            .hero-content {
+                max-width: 650px;
+            }
+
+            .hero-image img {
+                width: 420px;
+                height: 420px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr 350px;
+                gap: 3rem;
+            }
+
+            .hero-content {
+                max-width: 500px;
+            }
+
+            .hero-image img {
+                width: 320px;
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+                width: 100%;
+                max-width: 100vw;
+            }
+
+            * {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .container {
+                padding: 0 15px;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            .mobile-toggle {
+                display: block;
+                z-index: 1001;
+            }
+
+            .nav {
+                padding: 1rem;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--primary-navy);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
+                gap: 2rem;
+                z-index: 1000;
+                font-size: 1.2rem;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu a {
+                font-size: 1.5rem;
+                padding: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                padding: 120px 0 60px 0;
+                min-height: auto;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .hero-content {
+                margin-left: 0;
+                text-align: center;
+                max-width: 100%;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+                order: 1;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                word-wrap: break-word;
+            }
+
+            .hero-description {
+                font-size: 0.9rem;
+                margin-bottom: 2rem;
+                line-height: 1.6;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .cta-button {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                width: fit-content;
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .hero-image {
+                position: relative;
+                right: auto;
+                top: auto;
+                transform: none;
+                text-align: center;
+                margin-top: 0;
+                order: 2;
+                justify-self: center;
+            }
+
+            .hero-image img {
+                width: 220px;
+                height: 220px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .tools-showcase {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .case-study-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .dashboard-tabs {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .dashboard-tab {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                overflow-x: hidden;
+                width: 100vw;
+                max-width: 100vw;
+            }
+
+            .container {
+                padding: 0 10px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .nav {
+                padding: 0.8rem 0.5rem;
+            }
+
+            .logo img {
+                height: 35px;
+            }
+
+            .hero-title {
+                font-size: 1.6rem;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .hero-subtitle {
+                font-size: 0.9rem;
+                word-wrap: break-word;
+            }
+
+            .hero-description {
+                font-size: 0.85rem;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .hero-content {
+                padding: 0 0.5rem;
+            }
+
+            .hero-image img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+                word-wrap: break-word;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .service-card {
+                padding: 1.5rem 1rem;
+                margin: 0;
+            }
+
+            .service-title {
+                font-size: 1.2rem;
+                word-wrap: break-word;
+            }
+
+            .service-description {
+                font-size: 0.9rem;
+                word-wrap: break-word;
+            }
+
+            .dashboard-container {
+                padding: 1.5rem 0.5rem;
+            }
+
+            .dashboard-tabs {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .dashboard-tab {
+                padding: 0.8rem;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-card {
+                padding: 1rem;
+            }
+
+            .contact-form {
+                padding: 1rem;
+            }
+
+            input, textarea {
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: var(--gradient-gold);
+            z-index: 9999;
+            transition: width 0.3s ease;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            color: var(--primary-navy);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(234, 179, 8, 0.3);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(234, 179, 8, 0.4);
+        }
+
+        /* Button Hover Effects */
+        .audit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(234, 179, 8, 0.4);
+            background: linear-gradient(135deg, var(--premium-gold) 0%, #f59e0b 100%);
+        }
+
+        .audit-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+            background: linear-gradient(135deg, var(--electric-blue) 0%, #2563eb 100%);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Free Audit Link Styling */
+        .free-audit-link {
+            font-weight: 600;
+            position: relative;
+        }
+
+        .free-audit-link:hover {
+            color: var(--premium-gold) !important;
+        }
+
+        /* Mobile responsive audit features */
+        @media (max-width: 768px) {
+            .audit-features {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .audit-features {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="logo">
+                <img src="https://i.postimg.cc/nhH0yxSp/Copilot-20250811-212252-removebg-preview.png" alt="Malik Hannan - AI SEO Specialist">
+                <span style="margin-left: 10px; font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--premium-gold);">Malik Hannan</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#free-audit" class="free-audit-link">FREE Audit</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right">
+                <h1 class="hero-title">AI SEO <span style="color: var(--premium-gold);">Specialist</span></h1>
+                <p class="hero-subtitle">Transforming Digital Presence with Advanced SEO Strategies</p>
+                <p class="hero-description">I leverage cutting-edge AI technology and proven SEO methodologies to drive exceptional organic growth. From technical audits to content optimization, I deliver comprehensive SEO solutions that dominate search rankings.</p>
+                <a href="#free-audit" class="cta-button">Get Your Free SEO Audit Now</a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://i.postimg.cc/hv49VWrq/Whats-App-Image-2025-02-10-at-12-05-55-AM.jpg" alt="Malik Hannan - AI SEO Specialist">
+            </div>
+        </div>
+    </section>
+
+    <!-- Free SEO Audit Section -->
+    <section id="free-audit" class="section" style="background: var(--gradient-primary); color: var(--primary-white); padding: 4rem 0;">
+        <div class="container">
+            <div class="audit-content" style="text-align: center;">
+                <h2 class="section-title" data-aos="fade-up" style="color: var(--primary-white); margin-bottom: 1rem;">
+                    Get Your FREE SEO Audit Now
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Discover what's holding your website back from ranking higher. Get a comprehensive SEO analysis worth $500 - absolutely free!
+                </p>
+
+                <div class="audit-form-container" data-aos="fade-up" data-aos-delay="200" style="max-width: 500px; margin: 0 auto; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 3rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <form id="auditForm" action="https://formspree.io/f/mblkqewr" method="POST">
+                        <input type="hidden" name="form_type" value="free_seo_audit">
+
+                        <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
+                            <label for="audit-website" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Website URL *</label>
+                            <input type="url" id="audit-website" name="website_url" required style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem; background: rgba(255, 255, 255, 0.9);" placeholder="https://yourwebsite.com">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
+                            <label for="audit-email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address *</label>
+                            <input type="email" id="audit-email" name="_replyto" required style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem; background: rgba(255, 255, 255, 0.9);" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
+                            <label for="audit-name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Full Name *</label>
+                            <input type="text" id="audit-name" name="name" required style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem; background: rgba(255, 255, 255, 0.9);" placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 2rem; text-align: left;">
+                            <label for="audit-business" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Business Type</label>
+                            <select id="audit-business" name="business_type" style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem; background: rgba(255, 255, 255, 0.9);">
+                                <option value="">Select your business type</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="local-business">Local Business</option>
+                                <option value="saas">SaaS/Technology</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="education">Education</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="audit-btn" style="width: 100%; padding: 1rem 2rem; background: var(--premium-gold); border: none; border-radius: 10px; font-size: 1.1rem; font-weight: 600; color: var(--primary-navy); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3); position: relative; overflow: hidden;">
+                            <i class="fas fa-search"></i> Get My FREE SEO Audit
+                        </button>
+                    </form>
+                </div>
+
+                <div class="audit-features" data-aos="fade-up" data-aos-delay="300" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <div class="audit-feature" style="text-align: center;">
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--premium-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">Technical Analysis</h4>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">Complete technical SEO audit with actionable insights</p>
+                    </div>
+                    <div class="audit-feature" style="text-align: center;">
+                        <i class="fas fa-key" style="font-size: 2rem; color: var(--premium-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">🔑 Keyword Opportunities</h4>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">Discover high-value keywords you're missing</p>
+                    </div>
+                    <div class="audit-feature" style="text-align: center;">
+                        <i class="fas fa-users" style="font-size: 2rem; color: var(--premium-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">Competitor Analysis</h4>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">See what your competitors are doing right</p>
+                    </div>
+                    <div class="audit-feature" style="text-align: center;">
+                        <i class="fas fa-rocket" style="font-size: 2rem; color: var(--premium-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">Action Plan</h4>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">Step-by-step roadmap to improve rankings</p>
+                    </div>
+                    <div class="audit-feature" style="text-align: center;">
+                        <i class="fas fa-tachometer-alt" style="font-size: 2rem; color: var(--premium-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">⚡ Site Speed Optimization</h4>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">Identify and fix performance bottlenecks</p>
+                    </div>
+                    <div class="audit-feature" style="text-align: center;">
+                        <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--premium-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">🛡️ Security & Best Practices</h4>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">Check SEO-critical security configurations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--primary-navy);">Malik Hannan</h3>
+                    <p style="margin-bottom: 1.5rem;">As a passionate AI SEO Specialist with over 5 years of experience, I combine traditional SEO expertise with cutting edge artificial intelligence to deliver unprecedented results. I've evolved to become a pioneer in AI-driven SEO strategies that transform businesses.</p>
+
+                    <p style="margin-bottom: 1.5rem;">My expertise spans technical SEO, on-page optimization, advanced off-page strategies, and content marketing. I leverage AI tools like GPT-5, Claude, and custom ML models to analyze search patterns, predict algorithm changes, and automate optimization processes.</p>
+
+                    <p>I've helped businesses from local startups to Fortune 500 companies achieve remarkable growth in organic traffic and revenue. My mission is to democratize advanced SEO through AI technology, making enterprise-level strategies accessible to all business sizes.</p>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="200">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Avg. Traffic Increase %</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">Client Satisfaction %</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">AI SEO Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI-Powered SEO Audits</h3>
+                    <p class="service-description">Comprehensive website analysis using advanced AI tools to identify technical issues, optimization opportunities, and competitive advantages.</p>
+                    <ul class="service-features">
+                        <li>Technical SEO analysis</li>
+                        <li>Site speed optimization</li>
+                        <li>Mobile-friendliness assessment</li>
+                        <li>Crawl error detection</li>
+                        <li>Schema markup implementation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">Keyword Research</h3>
+                    <p class="service-description">Intelligent keyword discovery and analysis using AI to identify high-value opportunities and semantic keyword relationships.</p>
+                    <ul class="service-features">
+                        <li>Long-tail keyword identification</li>
+                        <li>Competitor keyword analysis</li>
+                        <li>Search intent optimization</li>
+                        <li>Voice search optimization</li>
+                        <li>Semantic keyword mapping</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3 class="service-title">AI Content Optimization</h3>
+                    <p class="service-description">Data-driven content strategy and optimization using AI tools to create engaging, search-optimized content that converts.</p>
+                    <ul class="service-features">
+                        <li>AI-assisted content creation</li>
+                        <li>Content gap analysis</li>
+                        <li>Topic clustering</li>
+                        <li>Meta optimization</li>
+                        <li>Content performance tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="service-title">Link Building</h3>
+                    <p class="service-description">Strategic link building campaigns powered by AI to identify high-quality opportunities and automate outreach processes.</p>
+                    <ul class="service-features">
+                        <li>AI-powered prospect identification</li>
+                        <li>Automated outreach campaigns</li>
+                        <li>Quality backlink analysis</li>
+                        <li>Guest posting opportunities</li>
+                        <li>Link building strategy</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">SEO Analytics & Reporting</h3>
+                    <p class="service-description">Advanced analytics and reporting using AI insights to track performance, measure ROI, and optimize strategies continuously.</p>
+                    <ul class="service-features">
+                        <li>Performance tracking</li>
+                        <li>ROI measurement</li>
+                        <li>Competitor monitoring</li>
+                        <li>Custom dashboards</li>
+                        <li>Predictive analytics</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="service-title">Local SEO & GMB</h3>
+                    <p class="service-description">Complete local SEO solutions including Google My Business optimization, local citations, and reputation management.</p>
+                    <ul class="service-features">
+                        <li>Google My Business optimization</li>
+                        <li>Local citation building</li>
+                        <li>Review management</li>
+                        <li>Local keyword optimization</li>
+                        <li>Map pack optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="service-title">On-Page SEO</h3>
+                    <p class="service-description">Comprehensive on-page optimization using AI to enhance title tags, meta descriptions, headers, and internal linking structure.</p>
+                    <ul class="service-features">
+                        <li>AI-powered title tag optimization</li>
+                        <li>Meta description enhancement</li>
+                        <li>Header structure optimization</li>
+                        <li>Internal linking strategy</li>
+                        <li>URL structure improvement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <h3 class="service-title">Off-Page SEO</h3>
+                    <p class="service-description">Strategic off-page optimization including AI-driven link building, digital PR, and authority building campaigns.</p>
+                    <ul class="service-features">
+                        <li>AI-powered link prospecting</li>
+                        <li>Digital PR campaigns</li>
+                        <li>Brand mention monitoring</li>
+                        <li>Social signal optimization</li>
+                        <li>Authority building strategies</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3 class="service-title">Content Writing & AI SEO Strategy</h3>
+                    <p class="service-description">AI-assisted content creation and strategic content planning to boost engagement, rankings, and conversions.</p>
+                    <ul class="service-features">
+                        <li>AI content generation</li>
+                        <li>Content strategy development</li>
+                        <li>Blog post optimization</li>
+                        <li>Content calendar planning</li>
+                        <li>E-A-T content enhancement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Dashboard -->
+    <section id="case-studies" class="section case-studies">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Case Studies</h2>
+            <div class="dashboard-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="dashboard-tabs">
+                    <button class="dashboard-tab active" onclick="showCaseStudies('ecommerce')">E-commerce</button>
+                    <button class="dashboard-tab" onclick="showCaseStudies('saas')">SaaS</button>
+                    <button class="dashboard-tab" onclick="showCaseStudies('local')">Local Business</button>
+                    <button class="dashboard-tab" onclick="showCaseStudies('enterprise')">Enterprise</button>
+                </div>
+
+                <div id="ecommerce-cases" class="case-study-grid">
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Fashion E-commerce Store</h3>
+                        <div class="case-study-metric">
+                            <span>Organic Traffic Increase</span>
+                            <span class="metric-value">340%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Revenue Growth</span>
+                            <span class="metric-value">285%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Keyword Rankings (Top 10)</span>
+                            <span class="metric-value">1,200+</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Electronics Retailer</h3>
+                        <div class="case-study-metric">
+                            <span>Organic Conversions</span>
+                            <span class="metric-value">450%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Page Load Speed Improvement</span>
+                            <span class="metric-value">65%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Mobile Traffic Growth</span>
+                            <span class="metric-value">520%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Home Decor Brand</h3>
+                        <div class="case-study-metric">
+                            <span>Local Search Visibility</span>
+                            <span class="metric-value">380%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Featured Snippets Captured</span>
+                            <span class="metric-value">150+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Click-Through Rate</span>
+                            <span class="metric-value">45%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Sports Equipment Store</h3>
+                        <div class="case-study-metric">
+                            <span>Online Sales Growth</span>
+                            <span class="metric-value">410%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Product Page Rankings</span>
+                            <span class="metric-value">850+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Cart Conversion Rate</span>
+                            <span class="metric-value">65%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Beauty & Wellness Brand</h3>
+                        <div class="case-study-metric">
+                            <span>Organic Traffic Boost</span>
+                            <span class="metric-value">390%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Social Commerce Integration</span>
+                            <span class="metric-value">280%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Customer Retention</span>
+                            <span class="metric-value">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Luxury Watch Store</h3>
+                        <div class="case-study-metric">
+                            <span>Premium Product Sales</span>
+                            <span class="metric-value">460%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>High-Value Keywords</span>
+                            <span class="metric-value">950+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Average Order Value</span>
+                            <span class="metric-value">320%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="saas-cases" class="case-study-grid" style="display: none;">
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Project Management Tool</h3>
+                        <div class="case-study-metric">
+                            <span>Lead Generation Increase</span>
+                            <span class="metric-value">425%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Demo Requests</span>
+                            <span class="metric-value">380%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Content Engagement</span>
+                            <span class="metric-value">290%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">CRM Software Platform</h3>
+                        <div class="case-study-metric">
+                            <span>Trial Signups</span>
+                            <span class="metric-value">350%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>B2B Keywords Ranked</span>
+                            <span class="metric-value">800+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Organic MQL Growth</span>
+                            <span class="metric-value">470%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Marketing Automation Platform</h3>
+                        <div class="case-study-metric">
+                            <span>Free Trial Conversions</span>
+                            <span class="metric-value">280%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Enterprise Keywords</span>
+                            <span class="metric-value">1,500+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Qualified Leads</span>
+                            <span class="metric-value">365%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Cloud Analytics Tool</h3>
+                        <div class="case-study-metric">
+                            <span>Enterprise Signups</span>
+                            <span class="metric-value">420%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Technical Content Performance</span>
+                            <span class="metric-value">380%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>API Documentation Traffic</span>
+                            <span class="metric-value">540%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">AI-Powered Chat Platform</h3>
+                        <div class="case-study-metric">
+                            <span>Developer Onboarding</span>
+                            <span class="metric-value">310%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Integration Guide Views</span>
+                            <span class="metric-value">680%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Community Engagement</span>
+                            <span class="metric-value">450%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">E-learning Platform</h3>
+                        <div class="case-study-metric">
+                            <span>Course Enrollment Growth</span>
+                            <span class="metric-value">390%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Educational Content Rankings</span>
+                            <span class="metric-value">1,200+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Student Retention Rate</span>
+                            <span class="metric-value">88%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="local-cases" class="case-study-grid" style="display: none;">
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Dental Practice</h3>
+                        <div class="case-study-metric">
+                            <span>Local Search Rankings</span>
+                            <span class="metric-value">#1</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Phone Call Increase</span>
+                            <span class="metric-value">280%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Google Reviews</span>
+                            <span class="metric-value">4.9★</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Restaurant Chain</h3>
+                        <div class="case-study-metric">
+                            <span>Store Visits Increase</span>
+                            <span class="metric-value">320%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Online Orders</span>
+                            <span class="metric-value">450%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Local Pack Rankings</span>
+                            <span class="metric-value">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Law Firm</h3>
+                        <div class="case-study-metric">
+                            <span>Local Visibility</span>
+                            <span class="metric-value">400%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Client Inquiries</span>
+                            <span class="metric-value">350%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Map Pack Dominance</span>
+                            <span class="metric-value">90%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Auto Repair Shop</h3>
+                        <div class="case-study-metric">
+                            <span>Local Traffic</span>
+                            <span class="metric-value">275%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Service Bookings</span>
+                            <span class="metric-value">380%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Review Rating</span>
+                            <span class="metric-value">4.8★</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Real Estate Agency</h3>
+                        <div class="case-study-metric">
+                            <span>Property Inquiries</span>
+                            <span class="metric-value">420%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Local Rankings</span>
+                            <span class="metric-value">#1</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Lead Quality</span>
+                            <span class="metric-value">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Medical Clinic</h3>
+                        <div class="case-study-metric">
+                            <span>Appointment Bookings</span>
+                            <span class="metric-value">340%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Patient Reviews</span>
+                            <span class="metric-value">4.9★</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Local Visibility</span>
+                            <span class="metric-value">390%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="enterprise-cases" class="case-study-grid" style="display: none;">
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Fortune 500 Company</h3>
+                        <div class="case-study-metric">
+                            <span>International SEO Growth</span>
+                            <span class="metric-value">380%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Enterprise Keywords</span>
+                            <span class="metric-value">5,000+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Global Visibility</span>
+                            <span class="metric-value">450%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Tech Multinational</h3>
+                        <div class="case-study-metric">
+                            <span>Multi-language SEO</span>
+                            <span class="metric-value">320%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Technical Audits</span>
+                            <span class="metric-value">15+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Site Performance</span>
+                            <span class="metric-value">75%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Financial Services Giant</h3>
+                        <div class="case-study-metric">
+                            <span>Compliance SEO</span>
+                            <span class="metric-value">295%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>High-value Keywords</span>
+                            <span class="metric-value">3,500+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Lead Quality Score</span>
+                            <span class="metric-value">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Healthcare Corporation</h3>
+                        <div class="case-study-metric">
+                            <span>Medical SEO Growth</span>
+                            <span class="metric-value">360%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Patient Acquisition</span>
+                            <span class="metric-value">285%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>HIPAA Compliance</span>
+                            <span class="metric-value">100%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Manufacturing Leader</h3>
+                        <div class="case-study-metric">
+                            <span>B2B Lead Generation</span>
+                            <span class="metric-value">410%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Industrial Keywords</span>
+                            <span class="metric-value">2,800+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Quote Requests</span>
+                            <span class="metric-value">320%</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <h3 class="case-study-title">Global Logistics Company</h3>
+                        <div class="case-study-metric">
+                            <span>International SEO Growth</span>
+                            <span class="metric-value">460%</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Multi-location Optimization</span>
+                            <span class="metric-value">200+</span>
+                        </div>
+                        <div class="case-study-metric">
+                            <span>Supply Chain Inquiries</span>
+                            <span class="metric-value">380%</span>
+                        </div>
+                    </div>
+
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Tools Showcase -->
+    <section id="tools" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Advanced SEO Tools Showcase</h2>
+            <div class="tools-showcase">
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tool-logo">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="tool-name">Google Analytics & Search Console</h3>
+                    <p class="tool-description">Advanced setup, configuration, and analysis of Google's essential SEO tools for comprehensive performance tracking.</p>
+                    <span class="tool-expertise">Expert Level</span>
+                </div>
+
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-logo">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="tool-name">SEMrush & Ahrefs</h3>
+                    <p class="tool-description">Professional keyword research, competitor analysis, and backlink strategies using industry-leading SEO platforms.</p>
+                    <span class="tool-expertise">Advanced</span>
+                </div>
+
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-logo">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="tool-name">AI SEO Tools (GPT-5, Claude)</h3>
+                    <p class="tool-description">Leveraging cutting-edge AI models for content optimization, keyword research, and strategic SEO planning.</p>
+                    <span class="tool-expertise">Specialist</span>
+                </div>
+
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tool-logo">
+                        <i class="fas fa-spider"></i>
+                    </div>
+                    <h3 class="tool-name">Screaming Frog & Technical SEO</h3>
+                    <p class="tool-description">Comprehensive website crawling and technical SEO analysis to identify and fix critical optimization issues.</p>
+                    <span class="tool-expertise">Expert Level</span>
+                </div>
+
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tool-logo">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="tool-name">PageSpeed & Core Web Vitals</h3>
+                    <p class="tool-description">Site speed optimization and Core Web Vitals improvement using advanced performance analysis tools.</p>
+                    <span class="tool-expertise">Advanced</span>
+                </div>
+
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="tool-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="tool-name">Schema Markup & Structured Data</h3>
+                    <p class="tool-description">Implementation of advanced schema markup and structured data for enhanced SERP features and visibility.</p>
+                    <span class="tool-expertise">Expert Level</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What My Clients Say</h2>
+            <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Malik's AI-powered SEO strategies transformed our e-commerce business. We saw a 340% increase in organic traffic within just 6 months. His expertise is unmatched!"</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mitchell" class="author-image">
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <span>E-commerce Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Working with Malik has been a game-changer for our SaaS platform. His AI-driven strategies increased our lead generation by 425%. Highly recommended!"</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Johnson" class="author-image">
+                            <div class="author-info">
+                                <h4>David Johnson</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Malik's local SEO expertise helped our practice achieve #1 rankings. Our phone calls increased by 280% and we maintain a 4.9-star Google rating!"</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Lisa Kim" class="author-image">
+                            <div class="author-info">
+                                <h4>Dr. Lisa Kim</h4>
+                                <span>Dental Practice Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Outstanding results! Our website traffic increased by 520% in 8 months. Malik's AI approach to SEO is revolutionary and delivers real business value."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Michael Chen" class="author-image">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>CEO, Tech Startup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Malik helped us dominate local search results. Our restaurant bookings increased by 380% and we're now the top-rated restaurant in our area!"</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Emma Rodriguez" class="author-image">
+                            <div class="author-info">
+                                <h4>Emma Rodriguez</h4>
+                                <span>Restaurant Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"The AI-powered content optimization strategy boosted our blog traffic by 650%. Malik's expertise in AI SEO is unparalleled in the industry."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="James Wilson" class="author-image">
+                            <div class="author-info">
+                                <h4>James Wilson</h4>
+                                <span>Content Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What makes AI SEO different from traditional SEO?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        AI SEO leverages artificial intelligence and machine learning to analyze data patterns, predict algorithm changes, automate optimization tasks, and create more effective strategies. It allows for faster analysis, better keyword research, content optimization at scale, and more accurate competitive analysis compared to traditional manual methods.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How long does it take to see SEO results?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        SEO results typically begin showing within 3-6 months, with significant improvements often visible in 6-12 months. However, the timeline depends on factors like website age, competition level, current SEO status, and the scope of optimization work. I provide regular progress reports to track improvements throughout the process.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Do you provide SEO services for all types of businesses?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, I work with businesses of all sizes across various industries including e-commerce, SaaS, local businesses, enterprises, healthcare, finance, and more. My AI-powered approach allows me to adapt strategies to specific industry requirements and business goals effectively.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What SEO tools and platforms do you use?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        I use a comprehensive suite of professional SEO tools including Google Analytics, Search Console, SEMrush, Ahrefs, Screaming Frog, and advanced AI platforms like GPT-5 and Claude. I also utilize specialized tools for technical SEO, schema markup, page speed optimization, and performance tracking.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How do you measure SEO success and ROI?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        I track multiple KPIs including organic traffic growth, keyword rankings, conversion rates, revenue attribution, page load speeds, and user engagement metrics. I provide detailed monthly reports with clear ROI calculations and actionable insights to demonstrate the impact of SEO efforts on your business goals.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Can you help with local SEO and Google My Business?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely! I specialize in local SEO optimization including Google My Business setup and optimization, local citation building, review management, local keyword optimization, and map pack rankings. I help local businesses dominate their geographic market and increase foot traffic and phone calls.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is included in your SEO audit service?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        My comprehensive SEO audit includes technical SEO analysis, site speed evaluation, mobile-friendliness check, crawl error identification, content optimization opportunities, backlink profile analysis, competitor research, keyword gap analysis, and a detailed action plan with prioritized recommendations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Discuss Your SEO Goals</h3>
+                    <p style="margin-bottom: 2rem; opacity: 0.9;">Ready to dominate search rankings with AI-powered SEO strategies? Let's connect and transform your digital presence.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hellomalikhannan.ai@gmail.com" style="color: var(--primary-white); text-decoration: none;">hellomalikhannan.ai@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/923178213191" target="_blank" style="color: var(--primary-white); text-decoration: none;">+92 317 8213191</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Professional Network</h4>
+                            <p>AI SEO Specialist & Digital Marketing Expert</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/923178213191" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/malik-hannan-5821b8294/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61576825538653" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/malikhannan__/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:hellomalikhannan.ai@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form
+                        id="contactForm"
+                        action="https://formspree.io/f/mblkqewr"
+                        method="POST"
+                    >
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Website</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">SEO Service Interest</label>
+                            <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid var(--slate-300); border-radius: 10px;">
+                                <option value="">Select a service</option>
+                                <option value="ai-seo-audit">AI-Powered SEO Audits</option>
+                                <option value="ai-keyword-research">Keyword Research</option>
+                                <option value="ai-content-optimization">Content Optimization</option>
+                                <option value="ai-link-building">Link Building</option>
+                                <option value="seo-analytics-reporting">SEO Analytics & Reporting</option>
+                                <option value="local-seo-gmb">Local SEO & GMB</option>
+                                <option value="ai-onpage-seo">On-Page SEO</option>
+                                <option value="ai-offpage-seo">Off-Page SEO</option>
+                                <option value="ai-content-writing">Content Writing & AI SEO Strategy</option>
+                                <option value="comprehensive">Comprehensive SEO Strategy</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your SEO goals, current challenges, and what you'd like to achieve..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                    <a href="mailto:hellomalikhannan.ai@gmail.com">Email</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/malik-hannan-5821b8294/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61576825538653" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/malikhannan__/" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid var(--slate-600); padding-top: 2rem; margin-top: 2rem; text-align: center;">
+                <p>&copy; 2025 Malik Hannan - AI SEO Specialist. All rights reserved.</p>
+                <p style="opacity: 0.7; margin-top: 0.5rem;">Transforming Digital Presence with Advanced AI SEO Strategies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (mobileToggle && navMenu) {
+            mobileToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Close menu when clicking on nav links
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                    mobileToggle.querySelector('i').classList.add('fa-bars');
+                    mobileToggle.querySelector('i').classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Scroll Progress Bar
+        window.addEventListener('scroll', function() {
+            const scrollProgress = document.getElementById('scrollProgress');
+            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.width = scrolled + '%';
+        });
+
+        // Header Background on Scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 23, 42, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 23, 42, 0.95)';
+            }
+        });
+
+        // Case Studies Dashboard
+        function showCaseStudies(category) {
+            // Hide all case study grids
+            document.querySelectorAll('[id$="-cases"]').forEach(grid => {
+                grid.style.display = 'none';
+            });
+
+            // Show selected category
+            document.getElementById(category + '-cases').style.display = 'grid';
+
+            // Update active tab
+            document.querySelectorAll('.dashboard-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const faqAnswer = faqItem.querySelector('.faq-answer');
+            const faqIcon = button.querySelector('.faq-icon');
+
+            // Close other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').classList.remove('active');
+                    item.querySelector('.faq-icon').classList.remove('fa-minus');
+                    item.querySelector('.faq-icon').classList.add('fa-plus');
+                }
+            });
+
+            // Toggle current FAQ item
+            faqItem.classList.toggle('active');
+            faqAnswer.classList.toggle('active');
+
+            if (faqIcon.classList.contains('fa-plus')) {
+                faqIcon.classList.remove('fa-plus');
+                faqIcon.classList.add('fa-minus');
+            } else {
+                faqIcon.classList.remove('fa-minus');
+                faqIcon.classList.add('fa-plus');
+            }
+        }
+
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('.submit-btn');
+            const form = this;
+
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Use fetch to submit form and handle response
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Success - reset form and show success message
+                    form.reset();
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    submitBtn.style.backgroundColor = '#10b981';
+
+                    // Show success alert
+                    alert('Thank you for your message! I will respond within 24 hours.');
+
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                        submitBtn.style.backgroundColor = '';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    // Error handling
+                    response.json().then(data => {
+                        if (Object.hasOwnProperty.call(data, 'errors')) {
+                            alert('Error: ' + data.errors.map(error => error.message).join(', '));
+                        } else {
+                            alert('Oops! There was a problem submitting your form. Please try again.');
+                        }
+                        // Reset button
+                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                        submitBtn.disabled = false;
+                    });
+                }
+            }).catch(error => {
+                // Network error
+                alert('There was a problem sending your message. Please check your connection and try again.');
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                submitBtn.disabled = false;
+            });
+        });
+
+        // Free SEO Audit Form Handling
+        document.getElementById('auditForm').addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('.audit-btn');
+            const form = this;
+
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing...';
+            submitBtn.disabled = true;
+
+            // Use fetch to submit form and handle response
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Success - show success message first, then reset form
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Audit Request Sent!';
+                    submitBtn.style.backgroundColor = '#10b981';
+
+                    // Show success alert
+                    alert('Thank you! Your FREE SEO audit request has been received. You will receive your comprehensive audit report within 24 hours.');
+
+                    // Reset form after success message
+                    form.reset();
+
+                    // Reset button after 4 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = '<i class="fas fa-search"></i> Get My FREE SEO Audit';
+                        submitBtn.style.backgroundColor = 'var(--premium-gold)';
+                        submitBtn.disabled = false;
+                    }, 4000);
+                } else {
+                    // Error handling
+                    response.json().then(data => {
+                        if (Object.hasOwnProperty.call(data, 'errors')) {
+                            alert('Error: ' + data.errors.map(error => error.message).join(', '));
+                        } else {
+                            alert('Oops! There was a problem submitting your audit request. Please try again.');
+                        }
+                        // Reset button
+                        submitBtn.innerHTML = '<i class="fas fa-search"></i> Get My FREE SEO Audit';
+                        submitBtn.disabled = false;
+                    });
+                }
+            }).catch(error => {
+                // Network error
+                alert('There was a problem sending your audit request. Please check your connection and try again.');
+                submitBtn.innerHTML = '<i class="fas fa-search"></i> Get My FREE SEO Audit';
+                submitBtn.disabled = false;
+            });
+        });
+
+        // Fade-in Animation on Scroll
+        function checkFadeIn() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkFadeIn);
+        window.addEventListener('load', checkFadeIn);
+
+        // Back to Top Functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/Hide Back to Top Button
+        function toggleBackToTop() {
+            const backToTopBtn = document.getElementById('backToTop');
+            const scrollProgress = document.getElementById('scrollProgress');
+
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+
+            // Update scroll progress
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            scrollProgress.style.width = scrolled + '%';
+        }
+
+        window.addEventListener('scroll', toggleBackToTop);
+
+        // Dynamic Stats Counter
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                let current = 0;
+                const increment = target / 50;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target + (stat.textContent.includes('%') ? '%' : '+');
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.ceil(current);
+                    }
+                }, 30);
+            });
+        }
+
+        // Trigger stats animation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.classList.contains('about-stats')) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const statsSection = document.querySelector('.about-stats');
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        });
+    </script>
+</body>
+</html>
